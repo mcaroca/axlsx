@@ -5,7 +5,7 @@ module Axlsx
     # @param [String] v File path
     # @return [String] File mime type
     def self.get_mime_type(v)
-      MimeMagic.by_magic(File.open(v)).to_s
+      'application/vnd.ms-excel'
     end
   end
 end
